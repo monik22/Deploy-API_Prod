@@ -22,7 +22,7 @@ function requestProcessor($request)
   }
   switch ($request['type'])
   {
-    case "APIqa":
+    case "APIprod":
       return deployBackendPackage($request);	
   }
 }
