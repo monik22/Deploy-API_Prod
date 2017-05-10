@@ -7,7 +7,7 @@ require_once('rabbitMQLib.inc');
 function deployBackendPackage($request)
 {
 	echo "\nRecieved Request: Installing API package...\n";
-	shell_exec('sh installAPI.sh'); 
+	shell_exec('sh installAPI.sh ' . $request['packageTar']);
 	echo "Success!\n";
 }
 
